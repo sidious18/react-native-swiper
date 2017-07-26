@@ -2,7 +2,8 @@
  * react-native-swiper
  * @author leecade<leecade@163.com>
  */
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import {
   Text,
   View,
@@ -554,7 +555,8 @@ export default class extends Component {
           contentOffset={this.state.offset}
           onScrollBeginDrag={this.onScrollBegin}
           onMomentumScrollEnd={this.onScrollEnd}
-          onScrollEndDrag={this.onScrollEndDrag}>
+          onScrollEndDrag={this.onScrollEndDrag}
+          removeClippedSubviews={false}>
           {pages}
         </ScrollView>
        )
